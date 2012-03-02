@@ -1,5 +1,5 @@
 #! /bin/bash
-project="destroxels"
+project="hoarded"
 rm -rf ../game-gallery/$project/*
 cp -R Build/$project/* ../game-gallery/$project/
 last_message=`git log --max-count=1 --pretty=format:"%s"`
