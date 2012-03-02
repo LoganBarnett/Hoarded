@@ -1,0 +1,8 @@
+#! /bin/bash
+project="destroxels"
+rm -rf ../game-gallery/$project/*
+cp -R Build/$project/* ../game-gallery/$project/
+last_message=`git log --max-count=1 --pretty=format:"%s"`
+cd ../game-gallery && git add $project
+cd ../game-gallery && git commit -am "$last_message"
+cd ../game-gallery && git push origin master

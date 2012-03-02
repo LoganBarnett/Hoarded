@@ -1,11 +1,13 @@
 *.pidb
 Temp
 .DS_Store
-Library/ScriptAssemblies
 *.userprefs
 Build
+*.unityproj
 *.csproj
+*.booproj
 *.sln
-Library/InspectorExpandedItems.asset
+*.app
 TestResults
-Library/expandedItems
+Library/
+TestResult.xml
